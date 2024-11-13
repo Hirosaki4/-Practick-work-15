@@ -4,23 +4,23 @@
 #include <string>
 #include <vector>
 
-// Структура для зберігання інформації про товар
+// РЎС‚СЂСѓРєС‚СѓСЂР° РґР»СЏ Р·Р±РµСЂС–РіР°РЅРЅСЏ С–РЅС„РѕСЂРјР°С†С–С— РїСЂРѕ С‚РѕРІР°СЂ
 struct Product {
     std::string name;
     double price;
     int quantity;
 };
 
-// Додає новий товар у вектор
+// Р”РѕРґР°С” РЅРѕРІРёР№ С‚РѕРІР°СЂ Сѓ РІРµРєС‚РѕСЂ
 void addProduct(std::vector<Product>& products, const std::string& name, double price, int quantity);
 
-// Видаляє товар за назвою
+// Р’РёРґР°Р»СЏС” С‚РѕРІР°СЂ Р·Р° РЅР°Р·РІРѕСЋ
 void removeProduct(std::vector<Product>& products, const std::string& name);
 
-// Знаходить найдорожчий товар
+// Р—РЅР°С…РѕРґРёС‚СЊ РЅР°Р№РґРѕСЂРѕР¶С‡РёР№ С‚РѕРІР°СЂ
 Product findMostExpensive(const std::vector<Product>& products);
 
-// Обчислює середню ціну товарів
+// РћР±С‡РёСЃР»СЋС” СЃРµСЂРµРґРЅСЋ С†С–РЅСѓ С‚РѕРІР°СЂС–РІ
 double calculateAveragePrice(const std::vector<Product>& products);
 
 #endif // PRODUCT_H
